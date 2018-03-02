@@ -1,0 +1,1021 @@
+// variables of collors
+$main-green: #9CC900
+$main-greY: #2C3032
+$lightGrey: #9DA1A4
+$btn-shadow: #F5F5F5
+$fiveth_block: rgba(206, 208, 210, 0.1)
+$think_green: #FAFAFA
+$think_green_preloader: #F0F0F0
+$first_footer: #313A42
+$input_first_input: 9da1a4
+$icon_soc_net: #BABABA
+$text_second_footer: #9DA1A4
+
+
+// variables of gradients    
+$gradient_btn: linear-gradient(0deg, rgb(110, 172, 98) 20%, rgb(156, 201, 1) 88%)
+$gradient_btn_hover: linear-gradient(0deg, rgb(110, 172, 98) 50%, rgb(156, 201, 1) 98%)
+$preloader: linear-gradient(90deg, #deec54 0%, #13638e 78%, #F0F0F0 78%, #F0F0F0 100%)
+
+
+// variables of fonts
+$fontHind: 'Hind', sans-serif
+$fontGH: 'Grand Hotel', cursive
+
+// templates
+%greenUnderline
+    content: ''
+    position: absolute
+    width: 40px
+    background-color: $main-green
+    border-bottom: 2px solid $main-green
+    left: 50%
+    bottom: -25px
+    
+// MIXINs
+@mixin preloader($grad-prel)
+    background: linear-gradient(90deg, #6F7E8A 0%, #9BC703 $grad-prel+%, #F0F0F0 $grad-prel+%, #F0F0F0 100%)
+
+    
+
+.wrap-containerr 
+    max-width: 1170px
+    margin: 0 auto
+
+    
+.third-block_wrap
+    padding-left: 5px
+    padding-right: 5px
+    //background-color: #af6767
+ 
+    
+    .third-block
+        background-color: #fff
+        padding: 69px 0px 0px 0px
+        
+        h3
+            text-align: center
+            margin-top: 0
+            font-family: $fontHind
+            color: $main-greY
+            font-size: 40px
+            font-weight: 600
+            position: relative
+            margin-right: 13px
+            
+            &::after
+                content: ''
+                position: absolute
+                width: 40px
+                background-color: $main-green
+                border-bottom: 2px solid $main-green
+                left: 48.9%
+                bottom: -5px
+            
+            span
+                font-family: $fontGH
+                color: $main-green
+                font-size: 60px
+                font-weight: 400
+                
+        p  
+            text-align: center
+            font-size: 20px
+            display: block
+            max-width: 500px
+            margin: 0 auto 
+            font-weight: 600
+            color: $lightGrey
+            margin-top: -2px
+            
+        &__buttons
+            display: flex
+            margin-top: 36px
+            padding-bottom: 79px
+            justify-content: center
+            flex-wrap: wrap
+            //margin-right: -12px
+    
+            
+            .btn_3rd
+                margin: 0
+                text-transform: uppercase
+                background: $gradient_btn
+                color: #fff
+                flex-basis: 220px
+                border-radius: 4px
+                font-size: 20px
+                font-weight: bold
+                text-align: center
+                height: 224px
+                box-sizing: border-box
+                margin-top: 12px
+                margin-right: 12px
+                cursor: pointer
+                transition: 0.5s
+                
+                &:hover
+                    background: $gradient_btn_hover
+                
+                &::before
+                    content: ''
+                    display: block
+                    background-image: url(../img/icon_1.png)
+                    background-repeat: no-repeat
+                    background-position: center
+                    height: 103px
+                    width: 84px 
+                    margin: 0 auto
+                    margin-top: 27px
+                    transition: 0.8s ease-in-out
+                
+                &:nth-child(2)::before
+                    background-image: url(../img/icon_2.png)
+                    margin-top: 27px
+                
+                &:nth-child(3)::before
+                    background-image: url(../img/icon_3.png)
+                    margin-top: 39px
+                    margin-right: 73px 
+                
+                &:nth-child(4)::before
+                    background-image: url(../img/icon_4.png)
+                    margin-top: 30px
+                    margin-right: 70px
+                
+                &:nth-child(5)::before
+                    background-image: url(../img/icon_5.png)
+                    margin-top: 32px
+                    margin-right: 73px
+                
+                span
+                    display: block
+                    width: 120px
+                    //border: 1px solid #000
+                    //padding-top: 10px
+                    margin: 0 auto
+                    
+                &:nth-child(1) span
+                    margin-top: 18px
+                    margin-right: 53px
+                    line-height: 25px
+
+                &:nth-child(2) span
+                    margin-top: 28px
+                    margin-right: 52px
+                    line-height: 25px
+
+                &:nth-child(3) span
+                    margin-top: 16px
+                    margin-right: 51px
+                    line-height: 25px
+
+                &:nth-child(4) span
+                    margin-top: 15px
+                    margin-right: 48px
+                    line-height: 25px
+
+                &:nth-child(5) span
+                    margin-top: 23px
+                    margin-right: 52px
+                    line-height: 25px
+
+                &:hover::before
+                    transform: rotateY(180deg)
+                
+@media screen and (max-width: 486px) 
+    .third-block_wrap
+        
+        .third-block
+            padding: 0
+        
+            h3
+                font-size: 30px
+            
+            h3 span
+                display: block
+    
+        .third-block__buttons
+            flex-direction: column
+            margin-bottom: 0
+            padding: 0
+
+            .btn_3rd
+                margin-top: 0px
+                border-radius: 0px
+                margin-right: -5px
+                margin-left: -5px
+                align-items: center
+                display: flex
+                flex-basis: 130px
+
+                &::before, span, &:nth-child(2)::before, &:nth-child(3)::before, &:nth-child(4)::before, &:nth-child(5)::before
+                    margin: 0
+                    padding: 0
+                    flex: 1
+                    
+.block_join_wrap
+    
+    background-image: url(../img/bg_2.jpg)
+    background-position: -8px -1015px
+    
+    .block_join
+        display: block
+        max-width: 1170px
+        height: 484px
+        margin: 0 auto
+        text-align: center
+        //box-shadow: 0 0 10px #fff
+        box-sizing: border-box
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        
+        h3
+            margin: 0
+            padding: 0
+            font-size: 60px
+            color: #fff
+            font-weight: 400
+            font-family: $fontHind 
+            font-weight: 600
+            margin-left: 241px
+            margin-top: 5px
+
+            span
+                font-family: $fontGH
+                font-size: 80px
+                font-weight: 400
+                color: $main-green
+
+        button.btn-join
+            margin: 0
+            padding: 0
+            padding: 25px 48px 21px 49px
+            margin-right: 300px
+            margin-left: 20px
+            margin-top: 10px
+            
+@media screen and (max-width: 1171px)
+    .block_join_wrap
+        
+        .block_join
+            flex-direction: column
+
+            justify-content: center
+            h3
+                margin: 0
+                font-size: 45px
+                
+                span
+                    display: block
+                     
+            button.btn-join
+                margin: 0
+
+.fiveth_block_wrap
+    //box-shadow: 0 0 10px #130cd3
+    padding-right: 5px
+    padding-left: 5px
+    
+    
+    .fiveth_block
+        max-width: 1170px
+        margin: 0 auto
+        padding-top: 89px
+        letter-spacing: 0.01em
+        //margin-bottom: 300px
+        padding-bottom: 86px
+        
+        p
+            text-align: center
+            margin: 0
+            display: block
+            max-width: 590px
+            margin: 0 auto
+            font-size: 25px
+            font-weight: 500
+            position: relative
+            margin-bottom: 72px
+            
+            &::after
+                content: ''
+                position: absolute
+                width: 40px
+                background-color: $main-green
+                border-bottom: 2px solid $main-green
+                left: 46.9%
+                bottom: -26px
+                 
+                
+        &_flex-container
+            //box-shadow: 0 0 10px #130cd3
+            display: flex
+            justify-content: space-between
+            
+            &_item
+                background-color: #F9F9F9
+                //box-shadow: 0 0 10px #ea1212
+                padding-top: 55px 
+                padding-bottom: 44px
+                border-radius: 4px
+                flex-basis: 23.0769%
+                
+                h3.h_five
+                    text-align: center
+                    color: $main-green
+                    font-size: 50px
+                    font-weight: bold
+                    //box-shadow: 0 0 10px #ea1212
+                    margin-bottom: 32px
+                    position: relative
+                    
+                    &::after
+                        content: ''
+                        display: block
+                        position: absolute
+                        width: 30px
+                        bottom: -11px
+                        position: absolute
+                        left: 50%
+                        transform: translate(-50%, 0)    
+                        background-color: $main-green
+                        border-bottom: 2px solid $main-green
+
+                    &::before
+                        content: ''
+                        display: block
+                        background-image: url(../img/earth.png)
+                        background-repeat: no-repeat
+                        //box-shadow: 0 0 10px #ea1212
+                        left: 50% + 1
+                        top: -50px 
+                        transform: translate(-50%, 0) 
+                        height: 42px
+                        width: 33px 
+                        position: absolute
+                    
+                &:nth-child(2)
+                    h3.h_five::before
+                        background-image: url(../img/leaf.png)
+
+                &:nth-child(3)
+                    h3.h_five::before
+                        background-image: url(../img/baloon.png)
+
+                &:nth-child(4)
+                    h3.h_five::before
+                        background-image: url(../img/repeat.png)
+                    
+                .span_five
+                    font-size: 20px
+                    margin: auto
+                    display: block
+                    color: $lightGrey
+                    text-align: center
+                    //box-shadow: 0 0 10px #531010
+                    
+@media screen and (max-width: 761px)
+    .fiveth_block_wrap
+        .fiveth_block
+            &_flex-container
+                &_item
+                    padding-bottom: 15px
+                    padding-top: 30px
+                    
+                    h3.h_five
+                        font-size: 40px
+                        
+@media screen and (max-width: 480px)
+    .fiveth_block_wrap
+        padding-right: 0px
+        padding-left: 0px
+        
+        
+        .fiveth_block
+            padding-top: 20px
+            padding-bottom: 0
+            
+            &_flex-container
+                flex-direction: column
+                margin-left: 5px
+                margin-right: 5px
+                
+                &_item
+                    box-shadow: inset 0px 0px 40px 2px rgba(156,201,0,1)
+                    padding-top: 5px
+                    padding-bottom: 5px
+                    border-radius: 0
+                    margin-left: -5px
+                    margin-right: -5px
+
+                    h3.h_five
+                        margin-top: 0
+                        margin-bottom: 10px
+                        
+                        &::after
+                            //display: none
+                            bottom: -0px 
+                        
+                        &::before
+                            left: 10%
+                            top: 90%
+                            transform: translate(0, -50%) 
+                        
+                        
+//  6th Block "Annual “Climate change” conference"
+
+.box_climat-change
+    //box-shadow: 0 0 10px #531010
+    //margin-bottom: 100px
+    background-color: #cbcbcb
+    padding-left: 5px
+    padding-right: 5px  
+    background-image: url(../img/bg_3.jpg)
+    background-position: center -450px
+
+    .box_climat-change_wrap
+        //box-shadow: 0 0 10px #531010
+        max-width: 702px
+        margin: 0 auto
+        padding-top: 36px
+        padding-bottom: 79px
+    
+        @media screen and (max-width: 420px)
+            &
+                padding-bottom: 0px 
+                padding-top: 1px
+        
+    
+        h3
+            text-align: center
+            font-size: 40px
+            color: #fff
+            font-weight: 600
+            position: relative
+            padding-bottom: 8px
+            
+        
+            &::after
+                content: ''
+                position: absolute
+                width: 40px
+                background-color: $main-green
+                border-bottom: 2px solid $main-green
+                left: 47.2%
+                bottom: -7px
+                
+        p
+            text-align: center
+            font-size: 18px
+            color: #fff
+            letter-spacing: 0.009em
+            padding-left: 5px
+            line-height: 28px
+            padding-bottom: 2px
+        span
+            display: block
+            text-align: center
+            font-family: $fontGH
+            color: $main-green
+            font-size: 30px
+            margin-left: 4px
+            padding-bottom: 30px
+        
+        .box_climat-change_flex
+            //box-shadow: 0 0 10px #531010
+            display: flex
+            //flex-wrap: wrap
+            justify-content: center
+            
+        
+            .climat-change_flex_col
+                //box-shadow: 0 0 10px #3a3aa5
+                box-sizing: border-box
+                //flex-basis: 48.718%
+                flex-basis: 342px
+                display: flex
+                //flex-wrap: wrap
+                justify-content: center
+                
+                &:first-child
+                    margin-right: 18px
+                
+                @media screen and (max-width: 728px)
+                    &:first-child
+                        //margin-right: 0px   
+                        
+                .climat_item
+                    //box-shadow: 0 0 10px #08ff54
+                    box-sizing: border-box
+                    //flex-basis: 47.368%
+                    flex-basis: 162px
+                    //margin-bottom: 18px
+                    //overflow: hidden
+                    font-weight: 500
+                    margin-bottom: 18px
+                    position: relative
+                
+                    &.double_dot::after
+                        content: ':'
+                        position: absolute
+                        font-size: 35px
+                        width: 35px
+                        height: 35px
+                        display: block
+                        //background-color: #fff
+                        color: #fff
+                        left: 103%
+                        top: 50%
+                        transform: translate(0, -90%)
+                        z-index: 10
+                
+                    &:last-child::after
+                        //display: none
+                    
+                    &:first-child
+                        margin-right: 18px
+                
+                    @media screen and (max-width: 368px)
+                        &:first-child
+                            //margin-right: 0px 
+                    
+                    .climat_num
+                        //box-shadow: 0 0 10px #531010
+                        text-align: center
+                        padding-top: 40px
+                        padding-bottom: 16px
+                        background-color: $fiveth_block
+                        font-size: 60px
+                        color: #fff
+                        border-radius: 4px 4px 0 0
+                    
+                        @media screen and (max-width: 420px)
+                            &
+                                font-size: 45px
+                                padding-top: 20px
+                                padding-bottom: 5px
+                        @media screen and (max-width: 420px)
+                            font-size: 35px
+                        
+                    
+                    .climat_title
+                        //box-shadow: 0 0 10px #531010
+                        text-align: center
+                        padding-top: 9px
+                        padding-bottom: 10px
+                        background-color: $main-green
+                        color: #fff
+                        text-transform: uppercase
+                        font-weight: bold
+                        font-size: 16px
+                        border-radius: 0 0 4px 4px
+                        
+                        @media screen and (max-width: 420px)
+                            &
+                                padding-top: 5px
+                                padding-bottom: 5px
+                                font-size: 14px
+                        
+.last_climat_item::after
+    display: none
+                        
+                        
+    // Our Projects
+    
+.our_projects
+    //margin-bottom: 500px
+    //background-color: $main-green + 20%
+    padding-top: 69px
+    padding-bottom: 85px
+    
+    h3
+        font-size: 40px
+        text-align: center
+        margin: 0
+        font-weight: 600
+        margin-left: -8px
+        position: relative
+        margin-bottom: 57px
+        
+        &::after
+            @extend %greenUnderline
+            left: 49.2%
+            bottom: -15px
+        
+    &__flex 
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        background-color: $main-green
+        margin-bottom: 44px
+        
+        &__item
+            flex-grow: 1
+            flex-basis: 25%
+            background-color: $main-green
+            height: auto
+            position: relative
+            overflow: hidden
+            cursor: pointer
+            
+            &:nth-of-type(1)
+                background-image: url(../img/7_block_1.jpg)
+            &:nth-of-type(2)
+                background-image: url(../img/7_block_2.jpg)
+            &:nth-of-type(3)
+                background-image: url(../img/7_block_3.jpg)
+            &:nth-of-type(4)
+                background-image: url(../img/7_block_4.jpg)
+            
+            @media screen and (max-width: 960px)
+                &
+                    flex-basis: 50%
+
+                    
+            @media screen and (max-width: 470px)
+                &
+                flex-basis: 100%
+                height: 50vw
+
+            &:hover img
+                filter: none
+                
+            &:hover p, &:hover span
+                color: $main-greY
+                text-shadow: 0 0 3px $main-green
+
+                
+            img
+                width: 100%
+                transition: 0.3s ease-in-out
+                filter: grayscale(100%) blur(2px)
+            
+            p
+                position: absolute
+                color: #fff
+                font-size: 25px
+                //font-size: 1.32vw
+                font-weight: 500
+                //bottom: 68px
+                bottom: 14.316%
+                //left: 35px
+                left: 7.37%
+                max-width: 250px
+                transition: 0.3s ease-in-out
+                
+            span
+                position: absolute
+                color: #fff
+                font-size: 20px
+                //font-size: 1.05vw
+                font-family: $fontGH
+                //bottom: 50px
+                bottom: 10.53%
+                //left: 36px
+                transition: 0.3s ease-in-out
+                left: 7.58%
+                
+    .button_our-projects
+        display: block
+        font-size: 13px
+        font-weight: 600
+        margin: 0 auto
+        letter-spacing: 0.01em
+        padding-top: 5px
+        padding-bottom: 4px
+        padding-left: 18px
+        
+        & .arrow-butt-circle
+            font-size: 25px
+
+
+
+//------------last-block
+
+
+.last-block_wrap
+    width: 100%
+    //margin-bottom: 500px
+    padding-top: 40px
+    padding-bottom: 42px
+    background-color: $think_green
+    padding-left: 5px
+    padding-right: 5px
+    
+    .last-block
+        max-width: 1170px
+        margin: 0 auto
+        
+        &_flex-wrap
+            display: flex
+            flex-wrap: wrap
+            
+            &__item
+                flex-grow: 1
+                flex-basis: 50%
+                padding-top: 3px
+                padding-right: 115px
+                //box-shadow: 0 0 10px #d61e1e
+            
+                
+                @media screen and (max-width: 860px)
+                    &
+                        flex-basis: 100%
+                        padding-right: 0
+                
+                
+                h3
+                    font-size: 40px
+                    font-weight: 600
+                    position: relative
+                    letter-spacing: 0.0007em
+                    margin: 0
+                    
+                    @media screen and (max-width: 1155px)
+                        &
+                            width: 300px
+                            margin: 0 auto
+                   
+                    
+                    span
+                        font-family: $fontGH
+                        color: $main-green
+                        font-size: 60px
+                        font-weight: 400
+                        
+                    &::after
+                        @extend %greenUnderline
+                        left: 1px
+                        bottom: -13px
+                p
+                    font-size: 15px
+                    color: $lightGrey
+                    padding-top: 32px
+                    padding-left: 1px
+                    letter-spacing: 0.0078em
+                    line-height: 25px
+                    margin-bottom: 30px
+                    
+                button
+                    display: block
+                    font-size: 13px
+                    font-weight: 600
+                    letter-spacing: 0.01em
+                    padding-top: 5px
+                    padding-bottom: 4px
+                    padding-left: 18px
+                    margin-left: 2px
+                    
+                    
+                    & .arrow-butt-circle
+                        font-size: 25px
+                        
+            &__item:last-of-type
+                padding: 35px
+                padding-right: 0
+                letter-spacing: 0.001em
+                margin: 0
+                padding-left: 15px
+                position: relative
+            
+                &::before
+                    content: "Problem solved"
+                    position: absolute
+                    right: 0
+                    top: 37px
+                    font-size: 15px
+                    color: #A4A8AB
+            
+                .preload_item
+                    display: flex
+                    justify-content: space-between
+                    align-items: flex-end
+                
+                    h4
+                        display: block
+                        width: 100%
+                        //background-color: #e26060
+                        margin-right: 70px
+                        margin-top: 0px
+                        position: relative
+                        color: #222222
+                        font-size: 20px
+                        padding-bottom: 9px
+                    
+                        &::after
+                            content: ""
+                            display: block
+                            bottom: -16px
+                            width: 100%
+                            height: 17px
+                            position: absolute
+                            @include preloader(10)
+                        
+                    &:nth-child(1) h4::after
+                        @include preloader(98)
+                    &:nth-child(2) h4::after
+                        @include preloader(78)
+                    &:nth-child(3) h4::after
+                        @include preloader(87)
+                    &:nth-child(4) h4::after
+                        @include preloader(33)
+                   
+                    span.value
+                        padding-bottom: 4px
+                        font-size: 20px
+                        font-weight: 700
+                        cursor: pointer
+                        
+                        &::after
+                            content: "%"
+                    
+                        
+.first-footer_wrap
+    background-color: $first_footer
+    //margin-bottom: 500px
+    padding-top: 11px
+    padding-bottom: 22px
+    padding-left: 5px
+    padding-right: 5px
+
+    .first-footer
+        max-width: 1170px
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        align-items: center
+    
+        @media screen and (max-width: 860px)
+            flex-direction: column
+            text-align: center
+            
+            h2
+                width: 100%
+    
+        h2
+            flex-grow: 1
+            font-size: 40px
+            color: #fff
+            font-weight: 400
+            padding-left: 0px
+            display: block
+        
+            i
+                font-style: normal
+                white-space: nowrap
+                
+        
+            @media screen and (max-width: 1024px)
+                &
+                    //width: 184px
+                    font-size: 30px
+        
+            span
+                font-weight: 500
+                font-size: 60px
+                color: $main-green
+                font-family: $fontGH
+        
+        form
+            flex-grow: 1.9
+            //align-items: center
+            justify-content: space-between
+            display: flex
+            margin-top: 11px
+            margin-left: 1px
+            
+            @media screen and (max-width: 390px)
+                &
+                    //flex-wrap: wrap
+                    flex-direction: column
+                
+                    .input_footer
+                        margin-bottom: 10px
+                        
+                
+                    .submit-footer
+                        height: 50px
+                        width: 98%
+                        
+                    
+            
+            
+            .input_footer
+                background-color: #464E55
+                outline: transparent
+                border: none
+                padding: 15px 15px 13px 17px
+                border-radius: 4px
+                flex-grow: 1
+                margin-right: 6px
+                font-size: 16px
+                font-weight: 600
+                color: $main-green
+                text-align: right
+                
+                &::-webkit-input-placeholder
+                    color: #fff
+                    text-align: left
+                &::-moz-input-placeholder
+                    color: #fff
+                    text-align: left
+                &:-moz-input-placeholder
+                    color: #fff
+                    text-align: left
+                &:-ms-input-placeholder
+                    color: #fff
+                    text-align: left
+                    
+                
+                &:focus
+                    box-shadow: inset 0px 0px 5px 2px rgba(156,201,0,1)
+            
+            .submit-footer
+                margin: 0
+                padding: 0
+                font-size: 13px
+                padding-right: 38px
+                padding-left: 37px
+                
+.second-footer_wrap
+    padding-left: 5px
+    padding-right: 5px
+    //margin-bottom: 500px
+    //background-color: #d95e5e
+    padding-top: 36px
+    padding-bottom: 36px
+    
+    
+    
+    .second-footer
+        max-width: 1170px
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        
+        @media screen and (max-width: 610px)
+            &
+            flex-direction: column
+        
+        .left-side
+            flex-grow: 1
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            flex-basis: 50%
+            
+            @media screen and (max-width: 760px)
+                &
+                    flex-direction: column
+            
+            .logo
+                font-size: 16px
+                text-transform: uppercase
+                font-weight: 600
+                padding-left: 2px
+                
+                span
+
+                    font-size: 30px
+                    font-family: $fontGH
+                    text-transform: none
+                    color: $main-green
+                    font-weight: 400
+                    
+            .license
+                margin-left: 28px
+                margin-top: 10px
+        .soc-net
+
+            display: flex
+            margin-top: 10px
+            
+            a
+                content: ""
+                margin-left: 6px
+                flex-grow: 1
+                flex-basis: 50%
+                display: block
+                width: 19px
+                height: 19px
+                background: url(../img/soc-ico.png) center right no-repeat
+                
+                &:nth-of-type(1)
+                    background-position: 0px 0px
+                &:nth-of-type(2)
+                    background-position: -25px 0px
+                &:nth-of-type(3)
+                    background-position: -51px 0px
+                &:nth-of-type(4)
+                    background-position: -77px 0px
+                &:nth-of-type(5)
+                    background-position: -77px 0px
+                &:nth-of-type(6)
+                    background-position: -128px 0px
+                    
+
+

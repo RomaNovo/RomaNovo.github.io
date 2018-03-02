@@ -1,0 +1,198 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .slider {
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .header-wrap {
+        flex-direction: column;
+    }
+    ul.main-nav {
+        padding: 0;
+    }
+    .slider-content h1 {
+        margin-right: 50px;
+        margin-top: 10px;
+    }
+    .slider-wrap {
+        height: 700px;
+    }
+}
+
+/* Extra Media */
+@media only screen and (max-width : 730px) {
+    nav {
+        flex-wrap: wrap-reverse;
+        justify-content: flex-end;
+    }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .slider-wrap {
+        height: 600px;
+    }
+    .button-slider {
+        padding: 18px 35px 18px 35px;
+        margin-top: 15px;
+    }
+    .slider-content h1 {
+        margin-top: -10px;
+    }
+    .wrap_slider_labels {
+        margin-top: 50px;
+    }
+}
+@media only screen and (max-width : 700px) {
+    .header-logo{
+        /*        align-self: flex-start;*/
+    }
+    .serch-button {
+        flex: 0 50px;
+        align-self: flex-start;
+        order: 3
+    }
+    nav {
+        justify-content: center;
+    }
+    .main-menu {
+        align-self: center
+    }
+    .main-nav {
+        margin-right: 0px;
+    }
+
+}
+@media only screen and (max-width : 630px) {
+    .slider-content h1 {
+        font-size: 200px;
+    }
+    .slider-content p.slider-h {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width : 530px) {
+    .slider-content p.slider-h {
+        font-size: 30px;
+    }
+    .main-menu {
+        display: none;
+        flex-basis: 100%
+    }
+    
+    .main-nav {
+        margin-top: 10px;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }
+    .main-nav  li {
+        width: 100%;
+    }
+    .main-nav a {
+        width: 100%;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .nav-button {
+        display: block;
+    }
+    .serch-button {
+        flex: 0 0px;
+        align-self: flex-start
+    }
+    nav {
+        align-self: center;
+    }
+    .nav-button {
+        order: 1;
+        margin-left: 70px;
+    }
+    .serch-button {
+        order: 1;
+    }
+
+
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .slider-content h1 {
+        font-size: 160px;
+        margin-top: -8px;
+
+    }
+    .slider-content p.slider-h {
+        margin-top: 90px;
+        font-size: 18px;
+        margin-right: 38px;
+    }
+    .slider-info {
+        padding-top: 23px;
+        margin-bottom: -2px;
+    }
+    .slider-wrap {
+        height: 460px;
+    }
+    .button-slider {
+        padding: 13px 25px 11px 25px;
+        margin-top: 15px;
+    }
+}
+/* Extra Media2*/
+@media only screen and (max-width : 400px) {
+    .slider-content h1 {
+        font-size: 140px;
+    }
+    .slider-wrap {
+        height: 420px;
+    }
+}
+@media only screen and (max-width : 350px) {
+    .slider-content h1 {
+        font-size: 130px;
+    }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    .slider-content h1 {
+        font-size: 125px;
+    }
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

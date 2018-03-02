@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+    <title>GreenRESCUES</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
+	<link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css" />
+<!--	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />-->
+<!--	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css" />-->
+<!--	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />-->
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
+<!--	<link rel="stylesheet" href="css/libs.min.css">-->
+    <link rel="stylesheet" href="css/fs_normalize.css" />
+    <link rel="stylesheet" href="css/fs_main.css" />
+    <link rel="stylesheet" href="css/fs_media.css" />
+	<link rel="stylesheet" href="css/main.css" /> 
+</head>
+<body>
+<header>
+    <div class="header-wrap wrap-container">
+        <div class="header-logo logo" >
+            <a href="#" id="logo">
+                Green<span>rescues</span>
+            </a>
+        </div>
+        <nav>
+            <input type="checkbox" id="checkboxNavButton">
+            <label for="checkboxNavButton" type="button" class="button-active nav-button">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <div class="main-menu">
+                <ul class="main-nav">
+                    <li><a class="buttonn button-active button-main-nav" href="#">home</a></li>
+                    <li><a class="buttonn na" href="#">pages</a></li>
+                    <li><a class="buttonn na" href="#">services</a></li>
+                    <li><a class="buttonn na" href="#">blog</a></li>
+                    <li><a class="buttonn na" href="#">gallery</a></li>
+                    <li><a class="buttonn na" href="#">shop</a></li>
+                    <li><a class="buttonn na" href="#">contacts</a></li>
+                </ul>
+            </div>
+            <div class="serch-button">
+                <div class="d6-1 dk">
+                    <form>
+                        <input type="text" placeholder="Search...">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+            </div>
+            <button type="button" class="buttonn button-active button-donate">
+                <span>donate</span>
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-1x arrow-butt-circle"></i>
+                    <i class="fa fa-chevron-right fa-stack-1x fa-inverse arrow-butt"></i>
+                </span>
+            </button>
+        </nav>
+    </div>
+</header>
+<input type="radio" name="slider_radio" id="slider_radio1" checked>
+<input type="radio" name="slider_radio" id="slider_radio2">
+<input type="radio" name="slider_radio" id="slider_radio3">
+<div class="slider">
+    <div class="slider-wrap">
+        <div class="slider-content border text-center slider1">
+            <h1>Creat</h1>
+            <p class="slider-h">a toxic free future</p>
+            <p class="slider-info">We exist because this fragile earth deserves a voice</p>
+            <button type="button" class="buttonn button-active button-slider"> start today </button>
+        </div>
+        <div class="slider-content border text-center slider2">
+            <h1>Protect</h1>
+            <p class="slider-h">the animal</p>
+            <p class="slider-info">We are majoring in healthy enviroment building for all</p>
+            <button type="button" class="buttonn button-active button-slider"> start today </button>
+        </div>
+        <div class="slider-content border text-center slider3">
+            <h1>Start</h1>
+            <p class="slider-h">agriculture campaign</p>
+            <p class="slider-info">Importance of agriculture for biodiversity conversation</p>
+            <button type="button" class="buttonn button-active button-slider"> start today </button>
+        </div>
+        <div class="wrap_slider_labels">
+            <label for="slider_radio1" class="label_slider label_slider1"></label>
+            <label for="slider_radio2" class="label_slider label_slider2"></label>
+            <label for="slider_radio3" class="label_slider label_slider3"></label>
+        </div>
+    </div>
+</div>
+
+<!--Вариант слайдера-->
+<!--
+<hr>
+    
+<div class="wrap_n">
+    <input type="radio" id="slide-1_n" name="slides" checked>
+    <section class="slide_n slide-one_n">
+        <div class="slider_wrap_inner">
+            <h1>Creat</h1>
+            <p class="slider-h">a toxic free future</p>
+            <p class="slider-info">We exist because this fragile earth deserves a voice</p>
+            <button type="button" class="buttonn button-active button-slider"> start today </button>
+        </div>
+    </section>
+    <input type="radio" id="slide-2_n" name="slides">
+    <section  class="slide_n slide-two_n">
+        <div class="slider_wrap_inner">
+            <h1>Protect</h1>
+            <p class="slider-h">the animal</p>
+            <p class="slider-info">We are majoring in healthy enviroment building for all</p>
+            <button type="button" class="buttonn button-active button-slider"> start today </button>
+        </div>
+    </section>
+    <input type="radio" id="slide-3_n" name="slides">
+    <section  class="slide_n slide-three_n">
+        <div class="slider_wrap_inner">
+            <h1>Start</h1>
+            <p class="slider-h">agriculture campaign</p>
+            <p class="slider-info">Importance of agriculture for biodiversity conversation</p>
+            <button type="button" class="buttonn button-active button-slider"> start today </button>
+        </div>
+    </section>
+    <div class="wrap_slider_labels">
+        <label for="slide-1_n" class="label_slider label_slider1"></label>
+        <label for="slide-2_n" class="label_slider label_slider2"></label>
+        <label for="slide-3_n" class="label_slider label_slider3"></label>
+    </div>
+</div>
+<hr>
+-->
+<div class="third-block_wrap">
+    <div class="third-block wrap-containerr">
+        <h3><span>20 years</span> of making changes</h3>
+        <p>We use non-violent, creative confrontation to expose 
+            global environmental problems:
+        </p>
+        <div class="third-block__buttons">
+            <a class="btn_3rd" ><span>climate change</span></a>
+            <a class="btn_3rd" ><span>nature</span></a>
+            <a class="btn_3rd" ><span>oceans</span></a>
+            <a class="btn_3rd" ><span>toxic pollution</span></a>
+            <a class="btn_3rd" ><span>farming</span></a>
+        </div>
+    </div>
+</div>
+<div class="block_join_wrap">
+    <div class="block_join">
+        <h3><span>Join</span> our team</h3>
+        <button type="button" class="buttonn button-active button-slider btn-join"> get involved </button>
+    </div>
+</div>
+<div class="fiveth_block_wrap">
+    <div class="fiveth_block">
+        <p>We use non-violent, creative confrontation to expose 
+            global environmental problems</p>
+        <div class="fiveth_block_flex-container">
+            <div class="fiveth_block_flex-container_item">
+                <h3 class="h_five">360</h3>
+                <span class="span_five">Projects Realized</span>
+            </div>
+            <div class="fiveth_block_flex-container_item">
+                <h3 class="h_five">$12000</h3>
+                <span class="span_five">Funds Collected</span>
+            </div>
+            <div class="fiveth_block_flex-container_item">
+                <h3 class="h_five">680</h3>
+                <span class="span_five">Volunteers Involved</span>
+            </div>
+            <div class="fiveth_block_flex-container_item">
+                <h3 class="h_five">460</h3>
+                <span class="span_five">Days of Help</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--  6th Block "Annual “Climate change” conference"  -->
+
+<div class="box_climat-change">
+    <div class="box_climat-change_wrap">
+        <h3>Annual “Climate change” conference</h3>
+        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.</p>
+        <span>Jun 20, 2015</span>
+        <div class="box_climat-change_flex">
+            <div class="climat-change_flex_col">
+                <div class="climat_item double_dot">
+                    <div class="climat_num">156</div>
+                    <div class="climat_title">days</div>
+                </div>
+                <div class="climat_item double_dot">
+                    <div class="climat_num">8</div>
+                    <div class="climat_title">hours</div>
+                </div>
+            </div>
+            <div class="climat-change_flex_col">
+                <div class="climat_item double_dot">
+                    <div class="climat_num">53</div>
+                    <div class="climat_title">minutes</div>
+                </div>
+                <div class="climat_item">
+                    <div class="climat_num">45</div>
+                    <div class="climat_title">seconds</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+<!--Our Projects-->
+<div class="our_projects">
+    <h3>Our Projects</h3>
+    <div class="our_projects__flex">
+        <div class="our_projects__flex__item">
+            <img src="img/7_block_1.jpg" alt="our services">
+            <p>The Ultimate Cheat Sheet On Devices</p>
+            <span>June 11, 2014</span>
+        </div>
+        <div class="our_projects__flex__item">
+            <img src="img/7_block_2.jpg" alt="our services">
+            <p>The Ultimate Cheat Sheet On Devices</p>
+            <span>June 11, 2014</span>
+        </div>
+        <div class="our_projects__flex__item">
+            <img src="img/7_block_3.jpg" alt="our services">
+            <p>The Ultimate Cheat Sheet On Devices</p>
+            <span>June 11, 2014</span>
+        </div>
+        <div class="our_projects__flex__item">
+            <img src="img/7_block_4.jpg" alt="our services">
+            <p>The Ultimate Cheat Sheet On Devices</p>
+            <span>June 11, 2014</span>
+        </div>
+    </div>
+    <button class="buttonn button-active button_our-projects" type="button">
+        <span>more info</span>
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-1x arrow-butt-circle"></i>
+            <i class="fa fa-chevron-right fa-stack-1x fa-inverse arrow-butt"></i>
+        </span>
+    </button>
+</div>
+<div class="last-block_wrap">
+    <div class="last-block">
+        <div class="last-block_flex-wrap">
+            <div class="last-block_flex-wrap__item">
+                <h3>Think <span>green!</span> Save money</h3>
+                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse mo- lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero. Duis autem vel eum iriure dolor in hendrerit </p>
+                <button class="buttonn button-active button_our-projects" type="button">
+                    <span>more info</span>
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-1x arrow-butt-circle"></i>
+                        <i class="fa fa-chevron-right fa-stack-1x fa-inverse arrow-butt"></i>
+                    </span>
+                </button>
+            </div>
+            <div class="last-block_flex-wrap__item">
+                <div class="preload_item">
+                    <h4>Climate change</h4>
+                    <span class="value">98</span>
+                </div>
+                <div class="preload_item">
+                    <h4>Forests</h4>
+                    <span class="value">78</span>
+                </div>
+                <div class="preload_item">
+                    <h4>Oceans</h4>
+                    <span class="value">87</span>
+                </div>
+                <div class="preload_item">
+                    <h4>Toxic pollution</h4>
+                    <span class="value">33</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="first-footer_wrap">
+    <div class="first-footer">
+        <h2><span>Be informed!</span> <i>Sign up for newsletter</i></h2>
+        <form action="">
+            <input type="text" placeholder="Enter Your Email" class="input_footer" >
+            <input type="submit" value="sign up" class="buttonn button-active button-slider submit-footer">
+        </form>
+    </div>
+</div>
+<div class="second-footer_wrap">
+    <div class="second-footer">
+        <div class="left-side">
+            <div class="logo">
+                <span>Green</span>rescues
+            </div>
+            <div class="license">
+                &copy; 2015 All Rights Reserved Terms of Use and Privacy Policy
+            </div>
+        </div>
+        <div class="soc-net">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+<!--	<script src="libs/jquery/jquery-1.11.1.min.js"></script>-->
+<!--	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>-->
+<!--	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>-->
+<!--	<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>-->
+<!--	<script src="libs/scrollto/jquery.scrollTo.min.js"></script>-->
+<!--	<script src="libs/owl-carousel/owl.carousel.min.js"></script>-->
+<!--	<script src="libs/countdown/jquery.plugin.js"></script>-->
+<!--	<script src="libs/countdown/jquery.countdown.min.js"></script>-->
+<!--	<script src="libs/countdown/jquery.countdown-ru.js"></script>-->
+<!--	<script src="libs/landing-nav/navigation.js"></script>-->
+	<script src="js/common.js"></script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
